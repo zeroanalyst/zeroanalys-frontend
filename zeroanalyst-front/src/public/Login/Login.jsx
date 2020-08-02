@@ -17,7 +17,7 @@ class Login extends Component {
   render() {
     return (
       <div className={this.props.classes.background}>
-        <LoginHeader />
+        <LoginHeader logo={this.props.logo} />
         <LoginBody />
         <LoginFooter />
       </div>

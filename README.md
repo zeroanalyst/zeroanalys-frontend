@@ -53,3 +53,4 @@ yarn start
 ## Changelog:
 
 - Dashboard Framework designed
+- Hotswap Logos for testing >> just change the logo locations in `zeroanalyst-front/src/App.js`

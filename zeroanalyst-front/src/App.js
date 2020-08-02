@@ -1,5 +1,6 @@
 import React from "react";
-import zaLOGO from "./assets/images/logoSVG/newKJ_amey.png";
+import justLogo from "./assets/images/logoSVG/AB2.svg";
+import logoWithName from "./assets/images/layout/login/logoWithName-Mod.png";
 import "./App.css";
 import "./assets/css/nonSelectable.css";
 import theme from "./assets/themes/ExtraDarkTheme";
@@ -15,8 +16,15 @@ function App() {
       <ThemeProvider theme={createMuiTheme(theme)}>
         <Router>
           <Switch>
-            <Route path="/" exact component={Login} />
-            <Route path="/dashboard" component={() => <Root logo={zaLOGO} />} />
+            <Route
+              path="/"
+              exact
+              component={() => <Login logo={logoWithName} />}
+            />
+            <Route
+              path="/dashboard"
+              component={() => <Root logo={justLogo} />}
+            />
           </Switch>
         </Router>
       </ThemeProvider>

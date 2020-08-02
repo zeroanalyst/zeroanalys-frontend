@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logo from "../../../assets/images/layout/login/logoWithName-Mod.png";
 
 class LoginHeader extends Component {
   state = {};
@@ -15,7 +14,11 @@ class LoginHeader extends Component {
   render() {
     return (
       <div>
-        <img src={logo} style={this.styleObj.logo} alt="Logo with Name" />
+        <img
+          src={this.props.logo}
+          style={this.styleObj.logo}
+          alt="Logo with Name"
+        />
       </div>
     );
   }
