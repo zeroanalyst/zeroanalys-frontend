@@ -5,6 +5,7 @@ export default {
     text: { secondary: "rgba(255, 255, 255, 0.5)" },
     primary: { main: "#00bcd4" },
     secondary: { main: "#ff3d00" },
+    warning: { main: "#ff5473" },
     header: { background: "#1b2226", text: "#ffffff" },
     navAlt: { background: "#14262c", backgroundHeader: "#2d4b5b" },
     navBottom: { background: "#0f181f" },

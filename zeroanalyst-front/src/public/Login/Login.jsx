@@ -1,14 +1,28 @@
 import React, { Component } from "react";
+import LoginBody from "./components/loginBody";
+import LoginHeader from "./components/loginHeader";
+import LoginFooter from "./components/loginFooter";
+import { withStyles } from "@material-ui/core";
+
+const styles = (theme) => ({
+  background: {
+    width: "100vw",
+    height: "100vh",
+    backgroundColor: theme.palette.background.default,
+  },
+});
 
 class Login extends Component {
   state = {};
   render() {
     return (
-      <div>
-        <h1>Login Component</h1>
+      <div className={this.props.classes.background}>
+        <LoginHeader />
+        <LoginBody />
+        <LoginFooter />
       </div>
     );
   }
 }
 
-export default Login;
+export default withStyles(styles)(Login);

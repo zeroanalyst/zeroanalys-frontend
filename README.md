@@ -21,6 +21,18 @@ cd zeroanalyst-front
 npm install
 ```
 
+In case of any errors, try following:
+
+```bash
+# For Linux and Mac users
+cd zeroanalyst-front
+sudo yarn install
+
+# For Windows
+cd zeroanalyst-front
+yarn install
+```
+
 - All the Main Activities are handled within :
   `zeroanalyst-front/src/private/components/MainContent.jsx` >> This Component is a part of LeftBar component in the nav section.
 

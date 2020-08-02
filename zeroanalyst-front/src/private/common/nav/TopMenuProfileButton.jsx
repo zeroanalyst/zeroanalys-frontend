@@ -28,11 +28,7 @@ class TopMenuProfile extends Component {
   render() {
     return (
       <div>
-        <Button
-          color="primary"
-          classes={this.props.classes.button}
-          style={this.buttonStyle}
-        >
+        <Button color="primary" style={this.buttonStyle}>
           <img
             src={this.state.gender === "female" ? womanAvatar : manAvatar}
             alt="logo"
