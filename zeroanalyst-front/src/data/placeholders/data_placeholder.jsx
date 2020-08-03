@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@material-ui/core";
 import theme from "../../assets/themes/ExtraDarkTheme";
+import FilterNumericBetween from "../../private/components/tableCustomRangeFIlter";
 
 const useStyles = {
   statusActive: {
@@ -35,16 +36,44 @@ class Data {
     this.styleObj = styles;
   }
 
+  minVal = null;
+  maxVal = null;
+  setParamsTPScoreLimits = (minVal, maxVal) => {
+    this.minVal = minVal;
+    this.maxVal = maxVal;
+  };
+
+  evalTPScoreTerm = (rowData) => {
+    return this.minVal < rowData && this.maxVal > rowData;
+  };
+
+  filterComponentNumericRange = () => (
+    <FilterNumericBetween eval={this.setParamsTPScoreLimits} />
+  );
   columns = [
-    { title: "ID", field: "id" },
-    { title: "Name", field: "name" },
-    { title: "Tags", field: "tags" },
-    { title: "Creation Date", field: "timestamp" },
-    { title: "TP Score", field: "tpScore" },
-    { title: "ATP Profile", field: "atpProfile" },
-    { title: "Kill Chain Phase", field: "killChain" },
-    { title: "Affected Compliance", field: "affectedCompliance" },
-    { title: "Status", field: "status" },
+    { title: "ID", field: "id", filtering: false },
+    { title: "Name", field: "name", filtering: false },
+    { title: "Tags", field: "tags", filtering: false },
+    { title: "Creation Date", field: "timestamp", filtering: false },
+    {
+      title: "TP Score (%)",
+      field: "tpScore",
+      filtering: this.setVisibility,
+      filterComponent: this.filterComponentNumericRange,
+      customFilterAndSearch: (term, rowData) => this.evalTPScoreTerm(rowData),
+    },
+    {
+      title: "ATP Profile ",
+      field: "atpProfile",
+      filtering: false,
+    },
+    { title: "Kill Chain Phase", field: "killChain", filtering: false },
+    {
+      title: "Affected Compliance",
+      field: "affectedCompliance",
+      filtering: false,
+    },
+    { title: "Status", field: "status", filtering: false },
   ];
   data = [
     {
@@ -52,7 +81,7 @@ class Data {
       name: "Threat1",
       tags: <Button>no tag</Button>,
       timestamp: Date(Date.now()).toString(),
-      tpScore: "80%",
+      tpScore: 80,
       atpProfile: "ATP1-70%",
       killChain: "Exploitation",
       affectedCompliance: "PCI, GDPR",

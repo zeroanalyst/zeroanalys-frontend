@@ -19,7 +19,7 @@ class Login extends Component {
       <div className={this.props.classes.background}>
         <LoginHeader logo={this.props.logo} />
         <LoginBody />
-        <LoginFooter />
+        {/* <LoginFooter /> */}
       </div>
     );
   }
