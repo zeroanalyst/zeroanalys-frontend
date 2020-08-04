@@ -5,6 +5,7 @@ import MenuList from "@material-ui/core/MenuList";
 import MenuItem from "@material-ui/core/MenuItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import { Drawer } from "@material-ui/core";
+import Button from "@material-ui/core/Button";
 import {
   DashboardOutlined,
   ExploreOutlined,
@@ -15,6 +16,8 @@ import {
   LayersOutlined,
   GroupWorkOutlined,
   DashboardTwoTone,
+  AllInclusive,
+  NotificationsActiveSharp,
 } from "@material-ui/icons";
 import {
   CogOutline,
@@ -52,6 +55,7 @@ const styles = (theme) => ({
   toolbar: theme.mixins.toolbar,
   menuItem: {
     height: 40,
+    padding: 25,
   },
   mainContainerDiv: {
     position: "fixed",
@@ -78,9 +82,11 @@ class Leftbar extends Component {
           <MenuList component="nav">
             <div className={this.props.classes.toolbar} />
             <MenuItem classes={{ root: this.props.classes.menuItem }}>
-              <ListItemIcon>
-                <Binoculars />
-              </ListItemIcon>
+              <NotificationsActiveSharp
+                style={{
+                  filter: "scale(1.3)",
+                }}
+              />
             </MenuItem>
           </MenuList>
         </Drawer>

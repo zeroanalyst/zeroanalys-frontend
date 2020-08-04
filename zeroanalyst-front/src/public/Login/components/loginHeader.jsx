@@ -7,7 +7,7 @@ class LoginHeader extends Component {
       width: 410,
       marginTop: "20vh",
       marginBottom: "5vh",
-      filter: "drop-shadow(0px 0px 100px white)",
+      // filter: "drop-shadow(0px 0px 100px white)",
     },
   };
 

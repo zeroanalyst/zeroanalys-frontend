@@ -57,7 +57,7 @@ const styles = (theme) => ({
     opacity: "80%",
     padding: 15,
   },
-  logOutButton: {
+  profileDropDownButton: {
     paddingRight: 100,
   },
 });
@@ -66,6 +66,16 @@ class TopBar extends Component {
   getImgUrl = () => {
     return "https://picsum.photos/32";
   };
+
+  dropDownButtons = [
+    {
+      id: 1,
+      text: "Log Out",
+      action: () => {
+        this.props.history.push("/");
+      },
+    },
+  ];
 
   dropDown = () => {
     return (
@@ -79,14 +89,15 @@ class TopBar extends Component {
         className={`drop-down ${this.props.classes.profileDropDown}`}
       >
         <div className={this.props.classes.profileDropDownSpace}></div>
-        <Button
-          className={this.props.classes.logOutButton}
-          onClick={() => {
-            this.props.history.push("/");
-          }}
-        >
-          Log Out
-        </Button>
+        {this.dropDownButtons.map((dropDownButton) => (
+          <Button
+            key={dropDownButton.id}
+            className={this.props.classes.profileDropDownButton}
+            onClick={dropDownButton.action}
+          >
+            {dropDownButton.text}
+          </Button>
+        ))}
       </div>
     );
   };
@@ -123,18 +134,18 @@ class TopBar extends Component {
           // style={{ backgroundColor: "#1b2226" }}
         >
           <Toolbar>
-            <IconButton
+            {/* <IconButton
               className={this.props.classes.logoButton}
               color="inherit"
               aria-label="Menu"
               to="/dashboard"
-            >
-              <img
-                src={this.props.logo}
-                alt="logo"
-                className={this.props.classes.logo}
-              />
-            </IconButton>
+            > */}
+            <img
+              src={this.props.logo}
+              alt="logo"
+              className={this.props.classes.logo}
+            />
+            {/* </IconButton> */}
             <div
               style={{
                 flexGrow: 1,

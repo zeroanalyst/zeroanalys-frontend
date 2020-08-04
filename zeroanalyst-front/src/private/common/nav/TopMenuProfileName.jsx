@@ -7,9 +7,9 @@ const styles = (theme) => ({
     marginRight: theme.spacing(1),
     textTransform: "none",
     cursor: "default",
-    height: 70,
+    height: 50,
     cursor: "pointer",
-    color: "white",
+    color: "#f8f9fa",
     fontWeight: "bold",
   },
   avatar: {
@@ -46,7 +46,10 @@ class TopMenuProfileName extends Component {
           }, 150);
         }}
       >
-        <Button color="primary" className={`profile-menu-button`}>
+        <Button
+          color="primary"
+          className={`profile-menu-button ${this.props.classes.button}`}
+        >
           {this.props.name.toUpperCase()}
         </Button>
       </div>
