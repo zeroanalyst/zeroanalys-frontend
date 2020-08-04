@@ -53,6 +53,7 @@ class Data {
   columns = [
     { title: "ID", field: "id", filtering: false },
     { title: "Name", field: "name", filtering: false },
+    { title: "Risk Elements", field: "riskelements", filtering: false },
     { title: "Tags", field: "tags", filtering: false },
     { title: "Creation Date", field: "timestamp", filtering: false },
     {
@@ -79,6 +80,7 @@ class Data {
     {
       id: 1,
       name: "Threat1",
+      riskelements: "10.10.10.10",
       tags: <Button>no tag</Button>,
       timestamp: Date(Date.now()).toString(),
       tpScore: 80,

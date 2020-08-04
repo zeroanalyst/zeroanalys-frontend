@@ -37,7 +37,7 @@ class InsightTableView extends Component {
   TitleElement = () => {
     return (
       <div>
-        <div className={this.props.classes.tableTitle}>INSIGHT</div>
+        <div className={this.props.classes.tableTitle}>INSIGHTS</div>
         <Button
           className={this.props.classes.filterButton}
           style={this.filterEnable ? { backgroundColor: "gray" } : {}}

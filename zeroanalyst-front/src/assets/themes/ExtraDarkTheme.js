@@ -3,7 +3,7 @@ export default {
   palette: {
     type: "dark",
     text: { secondary: "rgba(255, 255, 255, 0.5)" },
-    primary: { main: "#00bcd4" },
+    primary: { main: "#6C757D" },
     secondary: { main: "#ff3d00" },
     warning: { main: "#ff5473" },
     header: { background: "#1b2226", text: "#ffffff" },
@@ -11,10 +11,10 @@ export default {
     navBottom: { background: "#0f181f" },
     background: {
       paper: "#28353a",
-      paperLight: "#265058",
-      nav: "#28353a",
+      paperLight: "#495057",
+      nav: "#343A40",
       navLight: "#14262c",
-      default: "#222c30",
+      default: "#212529",
     },
     action: { disabled: "#4f4f4f" },
     divider: "rgba(255, 255, 255, 0.2)",
