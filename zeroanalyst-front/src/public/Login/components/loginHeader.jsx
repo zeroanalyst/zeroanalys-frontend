@@ -4,8 +4,8 @@ class LoginHeader extends Component {
   state = {};
   styleObj = {
     logo: {
-      width: 410,
-      marginTop: "20vh",
+      width: 375,
+      marginTop: "25vh",
       marginBottom: "5vh",
       // filter: "drop-shadow(0px 0px 100px white)",
     },

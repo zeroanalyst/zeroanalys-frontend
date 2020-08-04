@@ -25,7 +25,7 @@ const styles = (theme) => ({
   logo: {
     cursor: "pointer",
     height: 35,
-    filter: "drop-shadow(0px 0px 30px white)",
+    // filter: "drop-shadow(0px 0px 30px white)",
   },
   menuContainer: {
     float: "left",

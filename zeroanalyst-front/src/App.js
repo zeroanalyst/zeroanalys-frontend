@@ -1,6 +1,6 @@
 import React from "react";
 import justLogo from "./assets/images/logoSVG/NewLogos/onlyLogo.svg";
-import logoWithName from "./assets/images/logoSVG/NewLogos/mainLogo_3.svg";
+import logoWithName from "./assets/images/logoSVG/NewLogos/mainLogo_3.png";
 import "./App.css";
 import "./assets/css/nonSelectable.css";
 import theme from "./assets/themes/ExtraDarkTheme";
