@@ -1,0 +1,12 @@
+.drop-down {
+  display: none;
+}
+.profile-menu-button {
+  height: 70px;
+  color: white;
+  font-weight: "bold";
+}
+
+.profile-menu-button:hover .drop-down {
+  display: block;
+}

@@ -10,6 +10,8 @@ import {
 } from "../../../handlers/validators/loginValidator";
 
 import { LoginHandler } from "../../../handlers/handlers/loginHandler";
+import { withRouter } from "react-router-dom";
+import { compose } from "ramda";
 
 const styles = (theme) => ({
   textFields: {
@@ -113,7 +115,7 @@ class LoginBody extends Component {
 
   //   Handlers for login:
   handleLogin = () => {
-    LoginHandler(this.state.username.value, this.state.password.value);
+    return LoginHandler(this.state.username.value, this.state.password.value);
   };
 
   render() {
@@ -167,7 +169,14 @@ class LoginBody extends Component {
             className={this.props.classes.buttons}
             variant="contained"
             color="primary"
-            onClick={this.handleLogin}
+            onClick={() => {
+              let isAuth = this.handleLogin();
+              if (isAuth) {
+                this.props.history.push("/dashboard");
+              } else {
+                alert("Sorry! We cannot log you in right now...");
+              }
+            }}
           >
             Login
           </Button>
@@ -177,4 +186,4 @@ class LoginBody extends Component {
   }
 }
 
-export default withStyles(styles)(LoginBody);
+export default compose(withRouter, withStyles(styles))(LoginBody);

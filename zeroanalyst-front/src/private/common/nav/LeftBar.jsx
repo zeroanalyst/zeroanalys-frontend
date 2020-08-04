@@ -79,7 +79,7 @@ class Leftbar extends Component {
             <div className={this.props.classes.toolbar} />
             <MenuItem classes={{ root: this.props.classes.menuItem }}>
               <ListItemIcon>
-                <KeyboardArrowRightOutlined />
+                <Binoculars />
               </ListItemIcon>
             </MenuItem>
           </MenuList>
