@@ -155,7 +155,7 @@ class TopBar extends Component {
             <TopMenuProfileName
               onHover={this.handleProfileButtonHover}
               imgUrl={this.getImgUrl()}
-              name="Abhi M"
+              name="Abhi Mahadik"
             />
           </Toolbar>
         </AppBar>
