@@ -9,6 +9,8 @@ import {
   validatePassword,
 } from "../../../handlers/validators/loginValidator";
 
+import { FormControl } from "@material-ui/core";
+
 import { LoginHandler } from "../../../handlers/handlers/loginHandler";
 import { withRouter } from "react-router-dom";
 import { compose } from "ramda";
@@ -121,66 +123,68 @@ class LoginBody extends Component {
   render() {
     return (
       <div>
-        <div>
-          <TextField
-            className={this.props.classes.textFields}
-            error={this.state.username.error}
-            id="outlined-read-only-input"
-            label="Email ID or Username"
-            variant="outlined"
-            helperText={this.state.username.helperText}
-            value={this.state.username.value}
-            onChange={this.handleUsernameUpdate}
-          />
-        </div>
-        <div>
-          <TextField
-            className={this.props.classes.textFields}
-            error={this.state.password.error}
-            id="outlined-password-input"
-            label="Password"
-            password={this.state.password.value}
-            type={this.state.showPassword ? "text" : "password"}
-            autoComplete="current-password"
-            variant="outlined"
-            helperText={this.state.password.helperText}
-            onChange={this.handlePasswordUpdate}
-            InputProps={{
-              endAdornment: (
-                <InputAdornment position="end">
-                  <IconButton
-                    aria-label="toggle password visibility"
-                    onClick={this.handleClickShowPassword}
-                    onMouseDown={this.handleMouseDownPassword}
-                  >
-                    {this.state.showPassword ? (
-                      <VisibilityOff />
-                    ) : (
-                      <Visibility />
-                    )}
-                  </IconButton>
-                </InputAdornment>
-              ),
-            }}
-          />
-        </div>
-        <div>
-          <Button
-            className={this.props.classes.buttons}
-            variant="contained"
-            color="primary"
-            onClick={() => {
-              let isAuth = this.handleLogin();
-              if (isAuth) {
-                this.props.history.push("/dashboard");
-              } else {
-                alert("Sorry! We cannot log you in right now...");
-              }
-            }}
-          >
-            Login
-          </Button>
-        </div>
+        <FormControl>
+          <div>
+            <TextField
+              className={this.props.classes.textFields}
+              error={this.state.username.error}
+              id="outlined-read-only-input"
+              label="Email ID or Username"
+              variant="outlined"
+              helperText={this.state.username.helperText}
+              value={this.state.username.value}
+              onChange={this.handleUsernameUpdate}
+            />
+          </div>
+          <div>
+            <TextField
+              className={this.props.classes.textFields}
+              error={this.state.password.error}
+              id="outlined-password-input"
+              label="Password"
+              password={this.state.password.value}
+              type={this.state.showPassword ? "text" : "password"}
+              autoComplete="current-password"
+              variant="outlined"
+              helperText={this.state.password.helperText}
+              onChange={this.handlePasswordUpdate}
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <IconButton
+                      aria-label="toggle password visibility"
+                      onClick={this.handleClickShowPassword}
+                      onMouseDown={this.handleMouseDownPassword}
+                    >
+                      {this.state.showPassword ? (
+                        <VisibilityOff />
+                      ) : (
+                        <Visibility />
+                      )}
+                    </IconButton>
+                  </InputAdornment>
+                ),
+              }}
+            />
+          </div>
+          <div>
+            <Button
+              className={this.props.classes.buttons}
+              variant="contained"
+              color="primary"
+              onClick={() => {
+                let isAuth = this.handleLogin();
+                if (isAuth) {
+                  this.props.history.push("/dashboard");
+                } else {
+                  alert("Sorry! We cannot log you in right now...");
+                }
+              }}
+            >
+              Login
+            </Button>
+          </div>
+        </FormControl>
       </div>
     );
   }

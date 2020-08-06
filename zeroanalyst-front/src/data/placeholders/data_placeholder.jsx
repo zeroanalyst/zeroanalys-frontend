@@ -39,19 +39,24 @@ class Data {
   minVal = null;
   maxVal = null;
   setParamsTPScoreLimits = (minVal, maxVal) => {
+    console.log(minVal, maxVal);
     this.minVal = minVal;
     this.maxVal = maxVal;
   };
 
   evalTPScoreTerm = (rowData) => {
-    return this.minVal < rowData && this.maxVal > rowData;
+    console.log(rowData.tpScore);
+    return this.minVal < rowData.tpScore && this.maxVal > rowData.tpScore;
   };
 
-  filterComponentNumericRange = () => (
-    <FilterNumericBetween eval={this.setParamsTPScoreLimits} />
+  filterComponentNumericRange = (customProps) => (
+    <FilterNumericBetween
+      eval={this.setParamsTPScoreLimits}
+      customProps={customProps}
+    />
   );
   columns = [
-    { title: "ID", field: "id", filtering: false },
+    { title: "ID", field: "id", filtering: true },
     { title: "Name", field: "name", filtering: false },
     { title: "Risk Elements", field: "riskelements", filtering: false },
     { title: "Tags", field: "tags", filtering: false },
@@ -60,8 +65,6 @@ class Data {
       title: "TP Score (%)",
       field: "tpScore",
       filtering: this.setVisibility,
-      filterComponent: this.filterComponentNumericRange,
-      customFilterAndSearch: (term, rowData) => this.evalTPScoreTerm(rowData),
     },
     {
       title: "ATP Profile ",

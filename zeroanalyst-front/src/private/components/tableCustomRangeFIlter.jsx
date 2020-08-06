@@ -35,6 +35,7 @@ class FilterNumericBetween extends Component {
   };
 
   render() {
+    const { columnDef, onFilterChanged } = this.props.customProps;
     return (
       <div className={this.props.classes.fieldContainer}>
         <TextField
@@ -43,7 +44,10 @@ class FilterNumericBetween extends Component {
           variant="outlined"
           type="tel"
           value={this.state.minVal}
-          onChange={this.handleMinVal}
+          onChange={(event) => {
+            this.handleMinVal(event);
+            onFilterChanged(columnDef.tableData.id, 0);
+          }}
         />
         <TextField
           className={this.props.classes.maxField}
@@ -51,7 +55,10 @@ class FilterNumericBetween extends Component {
           variant="outlined"
           type="tel"
           value={this.state.maxVal}
-          onChange={this.handleMaxVal}
+          onChange={(event) => {
+            this.handleMaxVal(event);
+            onFilterChanged(columnDef.tableData.id, 0);
+          }}
         />
       </div>
     );

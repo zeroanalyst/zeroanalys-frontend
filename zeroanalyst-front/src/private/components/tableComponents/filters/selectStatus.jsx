@@ -1,0 +1,47 @@
+import React, { Component, useState } from "react";
+import { withStyles, DialogContentText } from "@material-ui/core";
+import { FormControl, Select, MenuItem, InputLabel } from "@material-ui/core";
+
+const styles = (theme) => ({
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth: 120,
+  },
+});
+
+class StatusSelect extends Component {
+  state = {
+    status: "",
+  };
+
+  handleChannge = (event) => {
+    let selection = event.target.value;
+    this.setState({ status: selection });
+    this.props.getStatus(selection);
+  };
+
+  render() {
+    return (
+      <React.Fragment>
+        <FormControl className={this.props.classes.formControl}>
+          <InputLabel id="demo-simple-select-label">Status</InputLabel>
+          <Select
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            value={this.state.status}
+            onChange={this.handleChannge}
+          >
+            <MenuItem value="">
+              <em>None</em>
+            </MenuItem>
+            <MenuItem value="In Progress">In Progress</MenuItem>
+            <MenuItem value="Open">Open</MenuItem>
+            <MenuItem value="Closed">Closed</MenuItem>
+          </Select>
+        </FormControl>
+      </React.Fragment>
+    );
+  }
+}
+
+export default withStyles(styles)(StatusSelect);
