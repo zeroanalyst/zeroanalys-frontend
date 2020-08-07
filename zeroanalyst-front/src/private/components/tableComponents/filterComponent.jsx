@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import StatusSelect from "./filters/selectStatus";
 import DateFilter from "./filters/periodFilter";
+import ListFilter from "./filters/checkList";
 import {
   Dialog,
   DialogContent,
@@ -29,6 +30,13 @@ const styles = (theme) => ({
     top: theme.spacing(1),
     color: theme.palette.grey[500],
   },
+  separator: {
+    width: "100%",
+    height: 2,
+    backgroundColor: theme.palette.primary.main,
+    marginTop: 20,
+    marginBottom: 20,
+  },
 });
 
 const DialogTitle = withStyles(styles)((props) => {
@@ -54,6 +62,7 @@ class FilterComponent extends Component {
     status: "",
     fromDate: null,
     toDate: null,
+    complianceList: null,
   };
 
   getStatus = (status) => {
@@ -64,6 +73,11 @@ class FilterComponent extends Component {
     let [fromDate, toDate] = dateData;
     this.setState({ fromDate: fromDate });
     this.setState({ toDate: toDate });
+  };
+
+  getComplianceList = (complianceList) => {
+    console.log(complianceList);
+    // this.setState({ complianceList: complianceList });
   };
 
   applyFilter = (state) => {
@@ -80,8 +94,43 @@ class FilterComponent extends Component {
         >
           <DialogTitle onClose={this.props.onClose}>Filter</DialogTitle>
           <DialogContent>
-            <StatusSelect getStatus={this.getStatus} />
-            <DateFilter getDates={this.getDates} />
+            <StatusSelect
+              statusList={["Open", "In Progress", "Closed"]}
+              getStatus={this.getStatus}
+            />
+            <div className={this.props.classes.separator}></div>
+            <DateFilter
+              title="Select Entries Between Dates"
+              getDates={this.getDates}
+            />
+            <div className={this.props.classes.separator}></div>
+            <ListFilter
+              componentTitle="Affected Compliance"
+              checkList={[
+                "HIPPA",
+                "NIST",
+                "GPG",
+                "GDPR",
+                "TSC",
+                "SOC 2",
+                "ISO 27001",
+              ]}
+              getCheckedList={this.getComplianceList}
+            />
+            <ListFilter
+              componentTitle="Kill Chain Phase"
+              checkList={[
+                "Reconnaissance",
+                "Intrusion",
+                "Exploitation",
+                "Privilege Escalation",
+                "Lateral Movement",
+                "Obfuscation / Anti-forensics",
+                "Denial of Service",
+                "Exfiltration",
+              ]}
+              getCheckedList={this.getComplianceList}
+            />
           </DialogContent>
           <DialogActions>
             <Button
@@ -100,4 +149,4 @@ class FilterComponent extends Component {
   }
 }
 
-export default FilterComponent;
+export default withStyles(styles)(FilterComponent);

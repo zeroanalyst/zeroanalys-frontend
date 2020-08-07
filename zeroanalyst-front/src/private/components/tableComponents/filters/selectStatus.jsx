@@ -20,6 +20,10 @@ class StatusSelect extends Component {
     this.props.getStatus(selection);
   };
 
+  componentDidMount = () => {
+    this.props.getStatus("");
+  };
+
   render() {
     return (
       <React.Fragment>
@@ -34,9 +38,11 @@ class StatusSelect extends Component {
             <MenuItem value="">
               <em>None</em>
             </MenuItem>
-            <MenuItem value="In Progress">In Progress</MenuItem>
-            <MenuItem value="Open">Open</MenuItem>
-            <MenuItem value="Closed">Closed</MenuItem>
+            {this.props.statusList.map((status) => (
+              <MenuItem key={status} value={status}>
+                {status}
+              </MenuItem>
+            ))}
           </Select>
         </FormControl>
       </React.Fragment>

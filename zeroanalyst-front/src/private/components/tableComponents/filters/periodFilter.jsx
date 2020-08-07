@@ -10,8 +10,13 @@ import {
   KeyboardDatePicker,
 } from "@material-ui/pickers";
 import { useState } from "react";
+import { useEffect } from "react";
 
 const styles = (theme) => ({
+  filterTitle: {
+    width: "100%",
+    marginBottom: 10,
+  },
   separator: {
     width: "100%",
     height: 2,
@@ -33,6 +38,10 @@ function DateFilter(props) {
   const [fromDate, setFromDate] = useState(new Date(Date.now()));
   const [toDate, setToDate] = useState(new Date(Date.now()));
 
+  useEffect(() => {
+    props.getDates([fromDate, toDate]);
+  }, []);
+
   const expDates = (fromDate, toDate) => {
     props.getDates([fromDate, toDate]);
   };
@@ -51,7 +60,7 @@ function DateFilter(props) {
 
   return (
     <div>
-      <div className={classes.separator}></div>
+      <div className={classes.filterTitle}>{props.title}</div>
       <MuiPickersUtilsProvider utils={DateFnsUtils}>
         <Grid container justify="space-around">
           <KeyboardDatePicker
@@ -89,8 +98,6 @@ function DateFilter(props) {
           **From Date cannot be greater than to Date
         </div>
       ) : null}
-
-      <div className={classes.separator}></div>
     </div>
   );
 }
