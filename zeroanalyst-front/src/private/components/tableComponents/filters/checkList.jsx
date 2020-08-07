@@ -23,14 +23,15 @@ const styles = (theme) => ({
 
 export function ListFilter(props) {
   var { classes } = props;
-  var checkItemList = [];
+
+  // 8 August 2020: Finish this Component
+
   return (
     <React.Fragment>
       <FormControl component="fieldset" style={{ marginRight: 20 }}>
         <FormLabel component="legend">{props.componentTitle}</FormLabel>
         <FormGroup>
           {props.checkList.map((checkItem) => {
-            checkItemList.push({ field: checkItem, toSearch: false });
             return (
               <FormControlLabel
                 key={checkItem}

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import StatusSelect from "./filters/selectStatus";
 import DateFilter from "./filters/periodFilter";
 import ListFilter from "./filters/checkList";
+import RangeFilter from "./filters/numericRangeFilter";
 import {
   Dialog,
   DialogContent,
@@ -60,9 +61,15 @@ const DialogTitle = withStyles(styles)((props) => {
 class FilterComponent extends Component {
   state = {
     status: "",
-    fromDate: null,
-    toDate: null,
+    date: {
+      from: null,
+      to: null,
+    },
     complianceList: null,
+    tpScore: {
+      from: null,
+      to: null,
+    },
   };
 
   getStatus = (status) => {
@@ -71,13 +78,29 @@ class FilterComponent extends Component {
 
   getDates = (dateData) => {
     let [fromDate, toDate] = dateData;
-    this.setState({ fromDate: fromDate });
-    this.setState({ toDate: toDate });
+    this.setState((prevState) => ({
+      date: {
+        from: fromDate,
+        to: toDate,
+      },
+    }));
   };
 
   getComplianceList = (complianceList) => {
     console.log(complianceList);
     // this.setState({ complianceList: complianceList });
+  };
+
+  getKCPList = () => {};
+
+  getTPRange = (rangeObj) => {
+    var [from, to] = rangeObj;
+    this.setState((prevState) => ({
+      tpScore: {
+        from: from,
+        to: to,
+      },
+    }));
   };
 
   applyFilter = (state) => {
@@ -97,6 +120,11 @@ class FilterComponent extends Component {
             <StatusSelect
               statusList={["Open", "In Progress", "Closed"]}
               getStatus={this.getStatus}
+            />
+            <div className={this.props.classes.separator}></div>
+            <RangeFilter
+              title="Enter True Positive Score Range"
+              getRange={this.getTPRange}
             />
             <div className={this.props.classes.separator}></div>
             <DateFilter
@@ -129,7 +157,7 @@ class FilterComponent extends Component {
                 "Denial of Service",
                 "Exfiltration",
               ]}
-              getCheckedList={this.getComplianceList}
+              getCheckedList={this.getKCPList}
             />
           </DialogContent>
           <DialogActions>
