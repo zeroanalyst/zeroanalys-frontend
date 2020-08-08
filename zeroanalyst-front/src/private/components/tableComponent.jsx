@@ -1,7 +1,13 @@
 import React, { Component } from "react";
 import MaterialTable from "material-table";
 import theme from "../../assets/themes/ExtraDarkTheme";
-import Data from "../../data/placeholders/data_placeholder";
+import { DataManager } from "../../handlers/handlers/dataHandler/handleData";
+import {
+  TagButton,
+  StatusSet,
+} from "../components/tableComponents/stylers/modifiers";
+
+import dummyData from "../../data/dummyData.json";
 import { Button } from "@material-ui/core";
 import { withStyles } from "@material-ui/core";
 import { AppBar, Toolbar, Switch } from "@material-ui/core";
@@ -40,8 +46,10 @@ const styles = (theme) => ({
 });
 
 class InsightTableView extends Component {
-  dataObj = null;
+  dataObject = null;
   filterOpen = false;
+  data = null;
+  columns = null;
 
   state = {
     filter: {
@@ -52,7 +60,12 @@ class InsightTableView extends Component {
 
   constructor() {
     super();
-    this.dataObj = new Data();
+    this.dataObject = new DataManager(dummyData);
+    // this.tagButtonObj = new TagButton(this.dataObject.getData());
+    // this.data = this.tagButtonObj.addButtonToTags("Tags");
+    this.data = this.dataObject.getData();
+    this.data = StatusSet(this.data, "Status");
+    this.columns = this.dataObject.getColumns();
   }
 
   handleFilterEnable = (event) => {
@@ -100,15 +113,19 @@ class InsightTableView extends Component {
         >
           <FilterListIcon />
         </Button>
-        <div className={this.props.classes.filterDiv}>
-          <Fade in={this.filterOpen}>
-            <Paper elevation={4} className={this.props.classes.paper}>
-              <FilterComponent
-                open={this.state.filter.open}
-                onClose={this.handleFilterClose}
-              />
-            </Paper>
-          </Fade>
+
+        <Button
+          onClick={() => {
+            this.forceUpdate();
+          }}
+        >
+          Rerender the table to check the speed
+        </Button>
+        <div>
+          <FilterComponent
+            open={this.state.filter.open}
+            onClose={this.handleFilterClose}
+          />
         </div>
       </Toolbar>
     );
@@ -118,8 +135,8 @@ class InsightTableView extends Component {
     return (
       <div style={{ maxWidth: "100%" }}>
         <MaterialTable
-          data={this.dataObj.data}
-          columns={this.dataObj.columns}
+          data={this.data}
+          columns={this.columns}
           options={{
             // filtering: this.filterEnable,
             headerStyle: {

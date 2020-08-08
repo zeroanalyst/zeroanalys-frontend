@@ -69,6 +69,7 @@ const styles = (theme) => ({
     paddingBottom: 20,
     boxSizing: "border-box",
     backgroundColor: theme.palette.background.paperLight,
+    overflow: "auto",
   },
 });
 

@@ -6,6 +6,7 @@ export default {
     primary: { main: "#6C757D" },
     secondary: { main: "#ff3d00" },
     warning: { main: "#ff5473" },
+    progress: { main: "#cf9800" },
     header: { background: "#1b2226", text: "#ffffff" },
     navAlt: { background: "#14262c", backgroundHeader: "#2d4b5b" },
     navBottom: { background: "#0f181f" },

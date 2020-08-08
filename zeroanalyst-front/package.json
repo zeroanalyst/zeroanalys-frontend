@@ -9,6 +9,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.5.0",
+    "html-react-parser": "^0.13.0",
     "material-table": "^1.66.0",
     "mdi-material-ui": "^6.16.0",
     "prop-types": "^15.7.2",

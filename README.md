@@ -54,3 +54,10 @@ yarn start
 
 - Dashboard Framework designed
 - Hotswap Logos for testing >> just change the logo locations in `zeroanalyst-front/src/App.js`
+
+#### 9th August 2020:
+
+- Data Population Arrangement done: `src/handlers/handlers/dataHandler/handleData.jsx`
+  1. JSON Format to be fed in is => array of JSONs `[ {} , {} , {} ]`
+  2. All table modifiers must be operated on the data that is fed in: e.g. the status modifier converts `"Status"` to `<div>Status</div>` type object once the data is passed through the modifier. (can be found in the table Component's constructor)
+  3. Table Rerendering is almost immediate even with larger number of entries. Still the runtime for the filtering should be managed once developed.

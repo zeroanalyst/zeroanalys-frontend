@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "@material-ui/core";
 import theme from "../../assets/themes/ExtraDarkTheme";
-import FilterNumericBetween from "../../private/components/tableCustomRangeFIlter";
 
 const useStyles = {
   statusActive: {
@@ -36,25 +35,6 @@ class Data {
     this.styleObj = styles;
   }
 
-  minVal = null;
-  maxVal = null;
-  setParamsTPScoreLimits = (minVal, maxVal) => {
-    console.log(minVal, maxVal);
-    this.minVal = minVal;
-    this.maxVal = maxVal;
-  };
-
-  evalTPScoreTerm = (rowData) => {
-    console.log(rowData.tpScore);
-    return this.minVal < rowData.tpScore && this.maxVal > rowData.tpScore;
-  };
-
-  filterComponentNumericRange = (customProps) => (
-    <FilterNumericBetween
-      eval={this.setParamsTPScoreLimits}
-      customProps={customProps}
-    />
-  );
   columns = [
     { title: "ID", field: "id", filtering: true },
     { title: "Name", field: "name", filtering: false },
@@ -85,7 +65,7 @@ class Data {
       name: "Threat1",
       riskelements: "10.10.10.10",
       tags: <Button>no tag</Button>,
-      timestamp: Date(Date.now()).toString(),
+      timestamp: Date(Date.now()),
       tpScore: 80,
       atpProfile: "APT1-70%",
       killChain: "Exploitation",

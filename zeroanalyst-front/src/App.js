@@ -7,6 +7,7 @@ import theme from "./assets/themes/ExtraDarkTheme";
 import Root from "./private/common/Frame.jsx";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./public/Login/Login";
+import JsonHandler from "./private/components/testComponents/jsonHandler";
 
 import { ThemeProvider, createMuiTheme } from "@material-ui/core";
 
@@ -25,6 +26,7 @@ function App() {
               path="/dashboard"
               component={() => <Root logo={logoWithName} />}
             />
+            <Route path="/test" component={() => <JsonHandler />} />
           </Switch>
         </Router>
       </ThemeProvider>

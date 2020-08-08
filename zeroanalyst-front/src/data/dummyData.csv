@@ -1,0 +1,721 @@
+ID,Name,Risk Elements,Tags,CreationDate,TP Score (%),APT Profile,Kill Chain Phase,Affected Compliance,Status
+1,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+2,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+3,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+4,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+5,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+6,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+7,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+8,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+9,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+10,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+11,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+12,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+13,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+14,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+15,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+16,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+17,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+18,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+19,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+20,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+21,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+22,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+23,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+24,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+25,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+26,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+27,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+28,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+29,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+30,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+31,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+32,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+33,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+34,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+35,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+36,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+37,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+38,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+39,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+40,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+41,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+42,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+43,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+44,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+45,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+46,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+47,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+48,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+49,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+50,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+51,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+52,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+53,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+54,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+55,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+56,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+57,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+58,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+59,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+60,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+61,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+62,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+63,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+64,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+65,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+66,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+67,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+68,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+69,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+70,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+71,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+72,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+73,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+74,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+75,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+76,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+77,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+78,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+79,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+80,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+81,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+82,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+83,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+84,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+85,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+86,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+87,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+88,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+89,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+90,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+91,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+92,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+93,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+94,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+95,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+96,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+97,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+98,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+99,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+100,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+101,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+102,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+103,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+104,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+105,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+106,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+107,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+108,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+109,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+110,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+111,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+112,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+113,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+114,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+115,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+116,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+117,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+118,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+119,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+120,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+121,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+122,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+123,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+124,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+125,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+126,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+127,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+128,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+129,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+130,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+131,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+132,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+133,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+134,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+135,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+136,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+137,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+138,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+139,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+140,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+141,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+142,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+143,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+144,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+145,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+146,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+147,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+148,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+149,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+150,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+151,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+152,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+153,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+154,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+155,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+156,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+157,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+158,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+159,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+160,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+161,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+162,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+163,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+164,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+165,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+166,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+167,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+168,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+169,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+170,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+171,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+172,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+173,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+174,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+175,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+176,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+177,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+178,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+179,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+180,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+181,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+182,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+183,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+184,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+185,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+186,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+187,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+188,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+189,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+190,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+191,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+192,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+193,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+194,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+195,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+196,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+197,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+198,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+199,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+200,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+201,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+202,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+203,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+204,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+205,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+206,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+207,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+208,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+209,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+210,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+211,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+212,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+213,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+214,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+215,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+216,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+217,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+218,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+219,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+220,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+221,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+222,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+223,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+224,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+225,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+226,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+227,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+228,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+229,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+230,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+231,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+232,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+233,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+234,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+235,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+236,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+237,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+238,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+239,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+240,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+241,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+242,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+243,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+244,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+245,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+246,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+247,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+248,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+249,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+250,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+251,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+252,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+253,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+254,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+255,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+256,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+257,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+258,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+259,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+260,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+261,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+262,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+263,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+264,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+265,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+266,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+267,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+268,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+269,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+270,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+271,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+272,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+273,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+274,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+275,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+276,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+277,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+278,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+279,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+280,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+281,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+282,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+283,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+284,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+285,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+286,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+287,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+288,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+289,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+290,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+291,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+292,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+293,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+294,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+295,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+296,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+297,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+298,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+299,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+300,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+301,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+302,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+303,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+304,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+305,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+306,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+307,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+308,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+309,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+310,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+311,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+312,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+313,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+314,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+315,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+316,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+317,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+318,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+319,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+320,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+321,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+322,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+323,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+324,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+325,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+326,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+327,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+328,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+329,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+330,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+331,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+332,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+333,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+334,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+335,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+336,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+337,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+338,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+339,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+340,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+341,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+342,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+343,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+344,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+345,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+346,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+347,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+348,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+349,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+350,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+351,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+352,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+353,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+354,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+355,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+356,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+357,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+358,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+359,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+360,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+361,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+362,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+363,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+364,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+365,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+366,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+367,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+368,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+369,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+370,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+371,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+372,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+373,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+374,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+375,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+376,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+377,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+378,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+379,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+380,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+381,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+382,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+383,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+384,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+385,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+386,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+387,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+388,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+389,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+390,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+391,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+392,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+393,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+394,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+395,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+396,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+397,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+398,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+399,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+400,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+401,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+402,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+403,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+404,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+405,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+406,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+407,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+408,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+409,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+410,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+411,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+412,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+413,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+414,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+415,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+416,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+417,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+418,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+419,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+420,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+421,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+422,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+423,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+424,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+425,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+426,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+427,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+428,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+429,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+430,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+431,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+432,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+433,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+434,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+435,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+436,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+437,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+438,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+439,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+440,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+441,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+442,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+443,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+444,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+445,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+446,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+447,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+448,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+449,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+450,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+451,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+452,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+453,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+454,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+455,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+456,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+457,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+458,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+459,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+460,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+461,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+462,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+463,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+464,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+465,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+466,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+467,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+468,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+469,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+470,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+471,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+472,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+473,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+474,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+475,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+476,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+477,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+478,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+479,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+480,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+481,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+482,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+483,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+484,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+485,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+486,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+487,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+488,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+489,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+490,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+491,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+492,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+493,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+494,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+495,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+496,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+497,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+498,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+499,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+500,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+501,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+502,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+503,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+504,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+505,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+506,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+507,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+508,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+509,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+510,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+511,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+512,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+513,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+514,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+515,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+516,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+517,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+518,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+519,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+520,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+521,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+522,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+523,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+524,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+525,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+526,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+527,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+528,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+529,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+530,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+531,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+532,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+533,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+534,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+535,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+536,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+537,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+538,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+539,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+540,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+541,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+542,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+543,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+544,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+545,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+546,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+547,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+548,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+549,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+550,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+551,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+552,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+553,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+554,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+555,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+556,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+557,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+558,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+559,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+560,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+561,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+562,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+563,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+564,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+565,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+566,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+567,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+568,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+569,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+570,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+571,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+572,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+573,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+574,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+575,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+576,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+577,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+578,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+579,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+580,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+581,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+582,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+583,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+584,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+585,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+586,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+587,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+588,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+589,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+590,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+591,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+592,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+593,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+594,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+595,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+596,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+597,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+598,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+599,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+600,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+601,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+602,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+603,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+604,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+605,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+606,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+607,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+608,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+609,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+610,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+611,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+612,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+613,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+614,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+615,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+616,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+617,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+618,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+619,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+620,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+621,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+622,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+623,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+624,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+625,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+626,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+627,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+628,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+629,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+630,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+631,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+632,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+633,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+634,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+635,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+636,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+637,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+638,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+639,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+640,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+641,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+642,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+643,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+644,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+645,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+646,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+647,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+648,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+649,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+650,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+651,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+652,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+653,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+654,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+655,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+656,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+657,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+658,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+659,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+660,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+661,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+662,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+663,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+664,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+665,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+666,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+667,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+668,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+669,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+670,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+671,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+672,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+673,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+674,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+675,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+676,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+677,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+678,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+679,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+680,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+681,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+682,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+683,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+684,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+685,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+686,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+687,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+688,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+689,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+690,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+691,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+692,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+693,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+694,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+695,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+696,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+697,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+698,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+699,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+700,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+701,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+702,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+703,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+704,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+705,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+706,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+707,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+708,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+709,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+710,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+711,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+712,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+713,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+714,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+715,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
+716,Threat1,10.10.10.10,no tag,07/10/2017 03:38,81,APT1-70%,Exploitation,"PCI, GDPR",Open
+717,Threat2,10.10.10.11,tag1,27/04/2020 23:27,85,APT1-50%,Reconnaissance,"NIST, GDPR",In Progress
+718,Threat3,10.10.10.13,tag2,22/05/2017 09:42,92,APT15-70%,Lateral Movement,"ISO 27001, TSC",In Progress
+719,Threat4,10.10.10.12,tag1,20/10/2018 19:51,89,APT50-80%,Obfuscation / Anti-forensics,"GPG, GDPR",Closed
+720,Threat5,10.10.10.15,tag0,28/11/2017 05:24,96,APT10-20%,Exploitation,"GPG, ISO 27001",Open
