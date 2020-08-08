@@ -67,7 +67,7 @@ class Data {
       filtering: this.setVisibility,
     },
     {
-      title: "ATP Profile ",
+      title: "APT Profile ",
       field: "atpProfile",
       filtering: false,
     },
@@ -87,7 +87,7 @@ class Data {
       tags: <Button>no tag</Button>,
       timestamp: Date(Date.now()).toString(),
       tpScore: 80,
-      atpProfile: "ATP1-70%",
+      atpProfile: "APT1-70%",
       killChain: "Exploitation",
       affectedCompliance: "PCI, GDPR",
       status: this.getStatusButton("Open"),

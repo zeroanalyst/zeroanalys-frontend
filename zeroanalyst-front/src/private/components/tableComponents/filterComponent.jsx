@@ -70,6 +70,8 @@ class FilterComponent extends Component {
       from: null,
       to: null,
     },
+    complianceList: null,
+    KCPList: null,
   };
 
   getStatus = (status) => {
@@ -86,12 +88,17 @@ class FilterComponent extends Component {
     }));
   };
 
-  getComplianceList = (complianceList) => {
-    console.log(complianceList);
-    // this.setState({ complianceList: complianceList });
+  getComplianceList = (checkedList) => {
+    this.setState((prevState) => ({
+      complianceList: checkedList,
+    }));
   };
 
-  getKCPList = () => {};
+  getKCPList = (checkedList) => {
+    this.setState((prevState) => ({
+      KCPList: checkedList,
+    }));
+  };
 
   getTPRange = (rangeObj) => {
     var [from, to] = rangeObj;

@@ -23,8 +23,29 @@ const styles = (theme) => ({
 
 export function ListFilter(props) {
   var { classes } = props;
+  const initialState = () => {
+    var obj = {};
+    props.checkList.map((item) => {
+      obj[item] = true;
+    });
+    return obj;
+  };
 
-  // 8 August 2020: Finish this Component
+  const [state, setState] = useState(initialState());
+
+  const handleCheckChanged = (event) => {
+    var sendObj = state;
+    var checkItem = event.target.name;
+    var isChecked = event.target.checked;
+    sendObj[checkItem] = isChecked;
+    setState({ ...state, [checkItem]: isChecked });
+
+    props.getCheckedList(sendObj);
+  };
+
+  useState(() => {
+    props.getCheckedList(state);
+  }, []);
 
   return (
     <React.Fragment>
@@ -39,9 +60,9 @@ export function ListFilter(props) {
                 name={checkItem}
                 control={
                   <Checkbox
-                    onChange={(event) => {
-                      console.log("Hello");
-                    }}
+                    name={checkItem}
+                    checked={state[checkItem]}
+                    onChange={handleCheckChanged}
                   />
                 }
               />
