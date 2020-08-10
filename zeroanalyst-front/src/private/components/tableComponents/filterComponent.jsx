@@ -111,7 +111,8 @@ class FilterComponent extends Component {
   };
 
   applyFilter = (state) => {
-    console.log(state);
+    this.props.applyFilter(state);
+    this.props.onClose();
   };
 
   render() {

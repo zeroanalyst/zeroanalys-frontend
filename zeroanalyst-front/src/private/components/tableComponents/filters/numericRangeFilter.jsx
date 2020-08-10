@@ -12,6 +12,9 @@ const styles = (theme) => ({
     display: "inline-block",
     margin: 10,
   },
+  warning: {
+    color: "red",
+  },
 });
 
 export function RangeFilter(props) {
@@ -64,6 +67,9 @@ export function RangeFilter(props) {
           onChange={handleNumberField}
         />
       </div>
+      {Number(From) > Number(To) ? (
+        <div className={classes.warning}>**Please enter a valid Range...</div>
+      ) : null}
     </React.Fragment>
   );
 }

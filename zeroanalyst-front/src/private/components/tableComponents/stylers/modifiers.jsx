@@ -53,14 +53,16 @@ const statusInProgress = {
 };
 
 export function StatusSet(dataIn, titleToControl) {
+  console.log("This is dataInput from StatusSet:", dataIn);
+
   const formatTitleToField = (str) => {
     var fieldName = str.replace(/[^a-zA-Z]/g, "");
     fieldName = fieldName.toLowerCase();
     return fieldName;
   };
 
-  const setStatus = (dataIn, title) => {
-    var datas = dataIn;
+  const setStatus = (dataInput, title) => {
+    var datas = dataInput;
     datas.map((data) => {
       var statusString = data[formatTitleToField(title)];
       if (statusString == "Closed") {
@@ -87,5 +89,7 @@ export function StatusSet(dataIn, titleToControl) {
     return datas;
   };
 
-  return setStatus(dataIn, titleToControl);
+  let tempData = dataIn;
+
+  return setStatus(tempData, titleToControl);
 }

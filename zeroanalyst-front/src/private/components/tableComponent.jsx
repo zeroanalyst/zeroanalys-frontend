@@ -7,6 +7,11 @@ import {
   StatusSet,
 } from "../components/tableComponents/stylers/modifiers";
 
+import {
+  Filter,
+  insightsFilter,
+} from "../../handlers/handlers/filterHandler/handleFilter";
+
 import dummyData from "../../data/dummyData.json";
 import { Button } from "@material-ui/core";
 import { withStyles } from "@material-ui/core";
@@ -43,6 +48,24 @@ const styles = (theme) => ({
     backgroundColor: theme.palette.background.paperLight,
     // padding: 0,
   },
+  statusActive: {
+    backgroundColor: theme.palette.warning.main,
+    padding: 10,
+    borderRadius: 5,
+    textShadow: "0px 0px 5px black",
+  },
+  statusClosed: {
+    backgroundColor: theme.palette.primary.main,
+    padding: 10,
+    borderRadius: 5,
+    textShadow: "0px 0px 5px black",
+  },
+  statusInProgress: {
+    backgroundColor: theme.palette.progress.main,
+    padding: 10,
+    borderRadius: 5,
+    textShadow: "0px 0px 5px black",
+  },
 });
 
 class InsightTableView extends Component {
@@ -56,17 +79,75 @@ class InsightTableView extends Component {
       enable: false,
       open: false,
     },
+    data: null,
   };
 
   constructor() {
     super();
     this.dataObject = new DataManager(dummyData);
-    // this.tagButtonObj = new TagButton(this.dataObject.getData());
-    // this.data = this.tagButtonObj.addButtonToTags("Tags");
     this.data = this.dataObject.getData();
-    this.data = StatusSet(this.data, "Status");
     this.columns = this.dataObject.getColumns();
   }
+  ///////////////////////////////////////////////////////////////////
+  ////////////////
+  /////////////////
+  /////////////   Move this method into modifiers as a fucntional Component
+  ////////////              In order to achieve loose binding
+  ////////////////
+  ///////////////////////////////////////////////////////////////////
+  modifyColumns = (columns) => {
+    // Modify the background of the Status Button
+    for (let i = 0; i < columns.length; i++) {
+      let element = columns[i];
+      if (element["title"] == "Status") {
+        columns[i] = {
+          ...columns[i],
+          render: (rowData) => {
+            if (rowData.status === "Open") {
+              return (
+                <div className={this.props.classes.statusActive}>
+                  {rowData.status}
+                </div>
+              );
+            } else if (rowData.status === "Closed") {
+              return (
+                <div className={this.props.classes.statusClosed}>
+                  {rowData.status}
+                </div>
+              );
+            } else if (rowData.status === "In Progress") {
+              return (
+                <div className={this.props.classes.statusInProgress}>
+                  {rowData.status}
+                </div>
+              );
+            } else {
+              return rowData.status;
+            }
+          },
+        };
+      }
+    }
+  };
+
+  ///////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////
+
+  componentWillMount = () => {
+    console.log("Before Mounting", this.columns);
+    this.modifyColumns(this.columns);
+    this.modifyData(this.data);
+  };
+
+  modifyData(data) {
+    var tempData = data;
+    this.setState({ data: tempData });
+  }
+
+  applyFilter = (filterObject) => {
+    var filteredData = insightsFilter(this.data, filterObject);
+    this.modifyData(filteredData);
+  };
 
   handleFilterEnable = (event) => {
     let checked = event.currentTarget.checked;
@@ -76,6 +157,9 @@ class InsightTableView extends Component {
         enable: checked,
       },
     }));
+    if (!checked) {
+      this.modifyData(this.data);
+    }
   };
 
   handleFilterClose = () => {
@@ -125,6 +209,7 @@ class InsightTableView extends Component {
           <FilterComponent
             open={this.state.filter.open}
             onClose={this.handleFilterClose}
+            applyFilter={this.applyFilter}
           />
         </div>
       </Toolbar>
@@ -135,7 +220,7 @@ class InsightTableView extends Component {
     return (
       <div style={{ maxWidth: "100%" }}>
         <MaterialTable
-          data={this.data}
+          data={this.state.data}
           columns={this.columns}
           options={{
             // filtering: this.filterEnable,
