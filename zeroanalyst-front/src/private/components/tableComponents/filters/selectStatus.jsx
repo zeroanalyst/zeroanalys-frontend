@@ -20,6 +20,10 @@ class StatusSelect extends Component {
     this.props.getStatus(selection);
   };
 
+  componentWillMount = () => {
+    this.setState({ status: this.props.activeStatus });
+  };
+
   componentDidMount = () => {
     this.props.getStatus("");
   };

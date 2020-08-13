@@ -24,14 +24,19 @@ const styles = (theme) => ({
 export function ListFilter(props) {
   var { classes } = props;
   const initialState = () => {
+    var mainCheckList = props.checkList;
     var obj = {};
-    props.checkList.map((item) => {
-      obj[item] = true;
+    var listOfFields = Object.getOwnPropertyNames(mainCheckList);
+    listOfFields.map((fieldName) => {
+      obj[fieldName] = mainCheckList[fieldName];
     });
     return obj;
   };
 
   const [state, setState] = useState(initialState());
+  const [fields, setFields] = useState(
+    Object.getOwnPropertyNames(props.checkList)
+  );
 
   const handleCheckChanged = (event) => {
     var sendObj = state;
@@ -43,7 +48,7 @@ export function ListFilter(props) {
     props.getCheckedList(sendObj);
   };
 
-  useState(() => {
+  useEffect(() => {
     props.getCheckedList(state);
   }, []);
 
@@ -52,7 +57,7 @@ export function ListFilter(props) {
       <FormControl component="fieldset" style={{ marginRight: 20 }}>
         <FormLabel component="legend">{props.componentTitle}</FormLabel>
         <FormGroup>
-          {props.checkList.map((checkItem) => {
+          {Object.getOwnPropertyNames(props.checkList).map((checkItem) => {
             return (
               <FormControlLabel
                 key={checkItem}

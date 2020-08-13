@@ -59,20 +59,7 @@ const DialogTitle = withStyles(styles)((props) => {
 });
 
 class FilterComponent extends Component {
-  state = {
-    status: "",
-    date: {
-      from: null,
-      to: null,
-    },
-    complianceList: null,
-    tpScore: {
-      from: null,
-      to: null,
-    },
-    complianceList: null,
-    KCPList: null,
-  };
+  state = {};
 
   getStatus = (status) => {
     this.setState({ status: status });
@@ -115,6 +102,14 @@ class FilterComponent extends Component {
     this.props.onClose();
   };
 
+  componentWillMount = () => {
+    this.setState(this.props.filterState);
+  };
+
+  componentDidMount = () => {
+    console.log(this.props.filterState);
+  };
+
   render() {
     return (
       <React.Fragment>
@@ -126,45 +121,33 @@ class FilterComponent extends Component {
           <DialogTitle onClose={this.props.onClose}>Filter</DialogTitle>
           <DialogContent>
             <StatusSelect
-              statusList={["Open", "In Progress", "Closed"]}
+              statusList={this.state.statusList}
+              activeStatus={this.state.status}
               getStatus={this.getStatus}
             />
             <div className={this.props.classes.separator}></div>
             <RangeFilter
               title="Enter True Positive Score Range"
               getRange={this.getTPRange}
+              fromNum={this.state.tpScore.from}
+              toNum={this.state.tpScore.to}
             />
             <div className={this.props.classes.separator}></div>
             <DateFilter
               title="Select Entries Between Dates"
               getDates={this.getDates}
+              fromDate={this.state.date.from}
+              toDate={this.state.date.to}
             />
             <div className={this.props.classes.separator}></div>
             <ListFilter
               componentTitle="Affected Compliance"
-              checkList={[
-                "HIPPA",
-                "NIST",
-                "GPG",
-                "GDPR",
-                "TSC",
-                "SOC 2",
-                "ISO 27001",
-              ]}
+              checkList={this.state.complianceList}
               getCheckedList={this.getComplianceList}
             />
             <ListFilter
               componentTitle="Kill Chain Phase"
-              checkList={[
-                "Reconnaissance",
-                "Intrusion",
-                "Exploitation",
-                "Privilege Escalation",
-                "Lateral Movement",
-                "Obfuscation / Anti-forensics",
-                "Denial of Service",
-                "Exfiltration",
-              ]}
+              checkList={this.state.KCPList}
               getCheckedList={this.getKCPList}
             />
           </DialogContent>
@@ -172,9 +155,19 @@ class FilterComponent extends Component {
             <Button
               autoFocus
               onClick={() => {
+                this.props.resetFilter();
+                this.setState(this.props.filterState);
+                console.log(this.state);
+                this.forceUpdate();
+              }}
+            >
+              Reset Filter
+            </Button>
+            <Button
+              autoFocus
+              onClick={() => {
                 this.applyFilter(this.state);
               }}
-              color="primary"
             >
               Apply
             </Button>

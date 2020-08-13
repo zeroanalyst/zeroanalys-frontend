@@ -39,6 +39,8 @@ function DateFilter(props) {
   const [toDate, setToDate] = useState(new Date(Date.now()));
 
   useEffect(() => {
+    setFromDate(props.fromDate);
+    setToDate(props.toDate);
     props.getDates([fromDate, toDate]);
   }, []);
 

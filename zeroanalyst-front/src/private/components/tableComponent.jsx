@@ -20,6 +20,7 @@ import FilterListIcon from "@material-ui/icons/FilterList";
 import { Grow, Paper, Slide, Fade } from "@material-ui/core";
 
 import FilterComponent from "./tableComponents/filterComponent";
+import FilterStatus from "./tableComponents/filters/filterStatus";
 
 const styles = (theme) => ({
   tableTitle: {
@@ -73,6 +74,38 @@ class InsightTableView extends Component {
   filterOpen = false;
   data = null;
   columns = null;
+  initialFilterState = {
+    status: "",
+    date: {
+      from: new Date(Date.now()),
+      to: new Date(Date.now()),
+    },
+    complianceList: {
+      HIPPA: true,
+      NIST: true,
+      GPG: true,
+      GDPR: true,
+      TSC: true,
+      "SOC 2": true,
+      "ISO 27001": true,
+    },
+    tpScore: {
+      from: null,
+      to: null,
+    },
+    KCPList: {
+      Reconnaissance: true,
+      Intrusion: true,
+      Exploitation: true,
+      "Privilege Escalation": true,
+      "Lateral Movement": true,
+      "Obfuscation / Anti-forensics": true,
+      "Denial of Service": true,
+      Exfiltration: true,
+    },
+    activeFilters: [],
+    statusList: ["Open", "In Progress", "Closed"],
+  };
 
   state = {
     filter: {
@@ -80,6 +113,8 @@ class InsightTableView extends Component {
       open: false,
     },
     data: null,
+    filterUpdate: 0,
+    filterState: this.initialFilterState,
   };
 
   constructor() {
@@ -87,6 +122,7 @@ class InsightTableView extends Component {
     this.dataObject = new DataManager(dummyData);
     this.data = this.dataObject.getData();
     this.columns = this.dataObject.getColumns();
+    this.resetFilter = this.resetFilter.bind(this);
   }
   ///////////////////////////////////////////////////////////////////
   ////////////////
@@ -145,9 +181,19 @@ class InsightTableView extends Component {
   }
 
   applyFilter = (filterObject) => {
+    this.setState({ filterState: filterObject });
+
     var filteredData = insightsFilter(this.data, filterObject);
     this.modifyData(filteredData);
+    this.setState({ filterUpdate: this.state.filterUpdate + 1 });
   };
+
+  async resetFilter() {
+    this.modifyData(this.data);
+    await this.setState({ filterState: this.initialFilterState });
+    console.log(this.state.filterState);
+    this.setState({ filterUpdate: this.state.filterUpdate + 1 });
+  }
 
   handleFilterEnable = (event) => {
     let checked = event.currentTarget.checked;
@@ -158,7 +204,7 @@ class InsightTableView extends Component {
       },
     }));
     if (!checked) {
-      this.modifyData(this.data);
+      this.resetFilter();
     }
   };
 
@@ -198,18 +244,21 @@ class InsightTableView extends Component {
           <FilterListIcon />
         </Button>
 
-        <Button
-          onClick={() => {
-            this.forceUpdate();
-          }}
-        >
-          Rerender the table to check the speed
-        </Button>
+        <FilterStatus
+          key={this.state.filterUpdate}
+          initialState={this.initialFilterState}
+          currentState={this.state.filterState}
+        />
         <div>
           <FilterComponent
+            key={this.state.filterUpdate}
             open={this.state.filter.open}
             onClose={this.handleFilterClose}
             applyFilter={this.applyFilter}
+            resetFilter={() => {
+              this.resetFilter();
+            }}
+            filterState={this.state.filterState}
           />
         </div>
       </Toolbar>
