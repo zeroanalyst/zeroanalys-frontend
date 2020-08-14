@@ -90,8 +90,8 @@ class InsightTableView extends Component {
       "ISO 27001": true,
     },
     tpScore: {
-      from: null,
-      to: null,
+      from: 0,
+      to: 0,
     },
     KCPList: {
       Reconnaissance: true,
@@ -170,7 +170,6 @@ class InsightTableView extends Component {
   //////////////////////////////////////////////////////////
 
   componentWillMount = () => {
-    console.log("Before Mounting", this.columns);
     this.modifyColumns(this.columns);
     this.modifyData(this.data);
   };
@@ -217,6 +216,11 @@ class InsightTableView extends Component {
     }));
   };
 
+  getFilterStates = (Obj) => {
+    let { date, ...finalObj } = Obj;
+    return finalObj;
+  };
+
   TitleElement = () => {
     return (
       <Toolbar>
@@ -246,8 +250,9 @@ class InsightTableView extends Component {
 
         <FilterStatus
           key={this.state.filterUpdate}
-          initialState={this.initialFilterState}
-          currentState={this.state.filterState}
+          initialState={this.getFilterStates(this.initialFilterState)}
+          currentState={this.getFilterStates(this.state.filterState)}
+          clearFilter={this.resetFilter}
         />
         <div>
           <FilterComponent

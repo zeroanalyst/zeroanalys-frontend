@@ -106,10 +106,6 @@ class FilterComponent extends Component {
     this.setState(this.props.filterState);
   };
 
-  componentDidMount = () => {
-    console.log(this.props.filterState);
-  };
-
   render() {
     return (
       <React.Fragment>

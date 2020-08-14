@@ -26,7 +26,6 @@ export function RangeFilter(props) {
   useEffect(() => {
     setFrom(props.fromNum);
     setTo(props.toNum);
-    props.getRange([+From, +To]);
   }, []);
 
   const handleNumberField = (event) => {

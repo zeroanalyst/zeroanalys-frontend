@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 import { HighlightOff } from "@material-ui/icons";
-import { Button } from "@material-ui/core";
+import { Button, withStyles } from "@material-ui/core";
+
+const styles = (theme) => ({
+  statusTabContainer: {
+    // display: "inline-block",
+    backgroundColor: theme.palette.navAlt.backgroundHeader,
+    padding: 2,
+    borderRadius: 2,
+  },
+});
 
 class FilterStatus extends Component {
   state = {};
@@ -13,15 +22,10 @@ class FilterStatus extends Component {
     for (let i = 0; i < fieldNames.length; i++) {
       let fieldName = fieldNames[i];
 
-      console.log("default state for", fieldName, defaultState[fieldName]);
-      console.log("current state for", fieldName, currentState[fieldName]);
-      console.log(
-        "current state === default state... for",
-        fieldName,
-        defaultState[fieldName] == currentState[fieldName]
-      );
-
-      if (defaultState[fieldName] != currentState[fieldName]) {
+      if (
+        JSON.stringify(defaultState[fieldName]) !=
+        JSON.stringify(currentState[fieldName])
+      ) {
         activeFilters.push(fieldName);
       }
     }
@@ -31,17 +35,21 @@ class FilterStatus extends Component {
   render() {
     return (
       <div
+        className={this.props.classes.statusTabContainer}
         style={{
           visibility:
-            this.props.initialState === this.props.currentState
+            JSON.stringify(this.props.initialState) ===
+            JSON.stringify(this.props.currentState)
               ? "hidden"
               : "visible",
         }}
       >
         {this.checkActiveFilters().map((activeFilter) => (
-          <div key={activeFilter}> {activeFilter} </div>
+          <React.Fragment>
+            <Button key={activeFilter}>{activeFilter},</Button>
+          </React.Fragment>
         ))}
-        <Button>
+        <Button onClick={this.props.clearFilter}>
           <HighlightOff />
         </Button>
       </div>
@@ -49,4 +57,4 @@ class FilterStatus extends Component {
   }
 }
 
-export default FilterStatus;
+export default withStyles(styles)(FilterStatus);

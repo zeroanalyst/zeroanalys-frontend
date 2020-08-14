@@ -24,10 +24,6 @@ class StatusSelect extends Component {
     this.setState({ status: this.props.activeStatus });
   };
 
-  componentDidMount = () => {
-    this.props.getStatus("");
-  };
-
   render() {
     return (
       <React.Fragment>
