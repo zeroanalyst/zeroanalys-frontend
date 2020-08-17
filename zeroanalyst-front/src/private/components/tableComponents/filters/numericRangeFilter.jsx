@@ -24,6 +24,7 @@ export function RangeFilter(props) {
   const [To, setTo] = useState("");
 
   useEffect(() => {
+    console.log(props.fromNum, props.toNum);
     setFrom(props.fromNum);
     setTo(props.toNum);
   }, []);

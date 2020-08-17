@@ -80,7 +80,7 @@ class InsightTableView extends Component {
       from: new Date(Date.now()),
       to: new Date(Date.now()),
     },
-    complianceList: {
+    "Affected Compliance": {
       HIPPA: true,
       NIST: true,
       GPG: true,
@@ -93,7 +93,7 @@ class InsightTableView extends Component {
       from: 0,
       to: 0,
     },
-    KCPList: {
+    "Kill Chain Phase": {
       Reconnaissance: true,
       Intrusion: true,
       Exploitation: true,

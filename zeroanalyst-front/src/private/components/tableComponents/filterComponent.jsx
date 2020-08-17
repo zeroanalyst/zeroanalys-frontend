@@ -77,13 +77,13 @@ class FilterComponent extends Component {
 
   getComplianceList = (checkedList) => {
     this.setState((prevState) => ({
-      complianceList: checkedList,
+      "Affected Compliance": checkedList,
     }));
   };
 
   getKCPList = (checkedList) => {
     this.setState((prevState) => ({
-      KCPList: checkedList,
+      "Kill Chain Phase": checkedList,
     }));
   };
 
@@ -138,12 +138,12 @@ class FilterComponent extends Component {
             <div className={this.props.classes.separator}></div>
             <ListFilter
               componentTitle="Affected Compliance"
-              checkList={this.state.complianceList}
+              checkList={this.state["Affected Compliance"]}
               getCheckedList={this.getComplianceList}
             />
             <ListFilter
               componentTitle="Kill Chain Phase"
-              checkList={this.state.KCPList}
+              checkList={this.state["Kill Chain Phase"]}
               getCheckedList={this.getKCPList}
             />
           </DialogContent>

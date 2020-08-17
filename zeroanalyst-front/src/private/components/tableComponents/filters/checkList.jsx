@@ -25,6 +25,7 @@ export function ListFilter(props) {
   var { classes } = props;
   const initialState = () => {
     var mainCheckList = props.checkList;
+    console.log(mainCheckList, props.checkList);
     var obj = {};
     var listOfFields = Object.getOwnPropertyNames(mainCheckList);
     listOfFields.map((fieldName) => {
